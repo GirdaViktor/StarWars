@@ -1,11 +1,12 @@
 import React from "react";
+import RouteComponent from "../routeComponent/RouteComponent";
+
 import styles from './app.module.scss';
-import HomePage from "../pages/HomePage";
 
 function App() {
   return (
     <div className={styles.wrapper}>
-      <HomePage/>
+      <RouteComponent/>
     </div>
   );
 }

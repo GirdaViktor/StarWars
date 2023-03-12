@@ -1,0 +1,34 @@
+.error_page {
+  width: 100%;
+  height: 100vh;
+  background-color: #17002F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    padding: 7% 77px 0;
+    margin: 0 auto 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      max-width: 645px;
+      max-height: 623px;
+      background-image: url('/img/the-death-star.svg');
+      background-repeat: no-repeat;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

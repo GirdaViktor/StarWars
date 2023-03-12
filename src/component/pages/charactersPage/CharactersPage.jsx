@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {fetchDataItems, selectorData} from "../../redux/slice/peopleSlice";
+import {fetchDataItems, selectorData} from "../../../redux/slice/peopleSlice";
 
-const HomePage = () => {
+const CharactersPage = () => {
   const dispatch = useDispatch();
   const items = useSelector(selectorData).items;
   const fetchData =  () => {
@@ -14,11 +14,11 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
-      главная страница
-      {console.log(items)}
-    </div>
+    <>
+
+      страница о персонажах
+    </>
   );
 };
 
-export default HomePage;
+export default CharactersPage;
