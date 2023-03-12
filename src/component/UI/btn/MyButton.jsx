@@ -1,14 +1,17 @@
 import React from 'react';
-import styles from './button.module.scss';
+import './button.scss';
 
 const MyButton = ({children, onclick, ...props}) => {
   const switchStyle = (props) => {
     switch(props.color) {
       case 'green':
-        return `${styles.button_green}`;
-      break;
+        return `button--green`;
+
       case 'yellow':
-        return `${styles.button_yellow}`;
+        return `button--yellow`;
+
+      default:
+        return '';
     }
   };
 
@@ -17,7 +20,7 @@ const MyButton = ({children, onclick, ...props}) => {
   return (
     <button
       onClick={onclick}
-      className={`${styles.button} ${styleBtn}`}
+      className={`button ${styleBtn}`}
       {...props}
     >
       {children}
