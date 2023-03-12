@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './header.module.scss';
 import {Link} from "react-router-dom";
 import Navigation from "../navigation/navigation";
+import './header.scss';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.header__wrapper}>
-        <Link to='/' className={styles.logo}>
+    <header className='header'>
+      <div className='header__wrapper'>
+        <Link to='/' className='logo'>
           <img width={'150px'} src="./img/logo.svg" alt="Logo"/>
         </Link>
 
