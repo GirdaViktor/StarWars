@@ -1,10 +1,21 @@
 .profile-info {
-  width: 435px;
-  background: linear-gradient(180deg, #17002F 42.19%, #1F2A63 100%);
+  width: 100%;
+  background: linear-gradient(180deg,
+          #17002F 42.19%,
+          #1F2A63 100%);
   padding: 30px 12px 25px;
   display: flex;
   flex-direction: column;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 0 16px 16px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    border-radius: 0 16px 16px 0;
+  }
+
+  @media (min-width: 768px) {
+    width: 440px;
+  }
 
   & h3 {
     font-family: 'Karla';
@@ -27,7 +38,15 @@
     background: #FDFDFD;
     box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
     border-radius: 8px;
-    margin-bottom: auto;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: auto;
+    }
+
+    @media (min-width: 960px) {
+      width: 264px;
+    }
 
     &-row {
       font-family: 'Karla';
@@ -41,7 +60,6 @@
       color: #000000;
     }
   }
-
 
   &__props {
     & .card-prop__item {

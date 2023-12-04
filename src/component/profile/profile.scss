@@ -3,14 +3,28 @@
   padding: 16px 10px 15px 12px;
   display: flex;
   flex-direction: column;
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px 16px 0 0;
+
+  @media (min-width: 768px) {
+    border-radius: 16px 0 0 16px;
+    width: 50%;
+  }
+
+  @media (min-width: 960px) {
+    width: auto;
+  }
 
   &__taglist {
     align-self: end;
   }
 
   &__img {
-    width: 340px;
-    height: 300px;
+    width: 280px;
+    height: 260px;
+
+    @media (min-width: 768px) {
+      width: 340px;
+      height: 300px;
+    }
   }
 }

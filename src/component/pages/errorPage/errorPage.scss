@@ -15,4 +15,9 @@
           url('/img/the-death-star.png'),
           url('/img/404.png');
   background-position: center center;
+  background-size: 42%, 92%;
+
+  @media (min-width: 1280px) {
+    background-size: 44%, 100%;
+  }
 }

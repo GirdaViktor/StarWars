@@ -1,12 +1,27 @@
 .character {
   &__wrapper {
     width: 100%;
-    max-width: 1280px;
-    padding: 28px 77px 74px;
+    padding: 12px 15px;
     margin: 0 auto;
     display: grid;
     grid-row-gap: 28px;
     align-items: start;
+
+    @media (min-width: 768px) {
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: 960px) {
+      width: 100%;
+      padding: 28px 35px 74px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 100%;
+      max-width: 1280px;
+      padding: 28px 77px 74px;
+    }
   }
 
   & h1 {

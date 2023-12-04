@@ -16,14 +16,14 @@ const CharactersPage = () => {
   const filterItem = filter.filterValue;
   const currentPage = filter.pageCount;
 
-  const fetchData =  () => {
-    dispatch(fetchDataItems({
-      filterItem,
-      currentPage
-    }));
-  };
-
   useEffect(() => {
+    const fetchData = () => {
+      dispatch(fetchDataItems({
+        filterItem,
+        currentPage
+      }));
+    };
+
     fetchData();
   }, [filterItem, currentPage]);
 
@@ -31,7 +31,7 @@ const CharactersPage = () => {
     <div className={'character'}>
       <div className={'character__wrapper'}>
         <Language className={'character__language'}/>
-        <h1>60 Peoples for you to choose your favorite</h1>
+        <h1>{data.items.count} Peoples for you to choose your favorite</h1>
         {data.status === 'loading' ? <div>Идет загрузка данных</div> : ''}
         {data.status === 'error' ? <div>Ошибка при получиении данных</div> : ''}
         {data.status === 'success'

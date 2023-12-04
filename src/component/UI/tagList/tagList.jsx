@@ -49,7 +49,13 @@ const TagList = ({value, ...props}) => {
   return (
     <ul className={`tag__items ${props.className}`}>
       {
-        value.map((item, i) => getTags(item, i))
+        value.map((item, i) => {
+          return (
+            item.value !== 'unknown'
+            ? getTags(item, i)
+            :''
+          )
+        })
       }
     </ul>
   );

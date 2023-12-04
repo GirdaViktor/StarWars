@@ -10,11 +10,23 @@
     align-items: center;
     width: 100%;
     max-width: 1280px;
-    padding: 0 77px;
+    padding: 0 15px;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      padding: 0 35px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 0 77px;
+    }
   }
 }
 
 .logo {
   margin-right: 40px;
+
+  & img {
+    width: 150px;
+  }
 }

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import CardProp from "../cardProp/cardProp";
 import TagList from "../UI/tagList/tagList";
 

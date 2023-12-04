@@ -11,13 +11,21 @@
   align-items: center;
   transform: scale(0);
 
+  @media (min-width: 768px) {
+    padding: 0 16px;
+  }
+
   &__close {
     position: absolute;
     width: 32px;
     height: 32px;
     right: 0;
-    top: -50px;
+    top: -30px;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+      top: -50px;
+    }
   }
 
   &__content {
@@ -25,6 +33,14 @@
     position: relative;
     box-shadow: 4px 4px 8px rgba(1, 28, 64, 0.2);
     border-radius: 16px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+
+    @media (min-width: 960px) {
+      max-width: 800px;
+    }
   }
 
   &--active {
