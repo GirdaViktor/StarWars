@@ -1,0 +1,24 @@
+.character-card {
+  background: #F0F0F0;
+  border-radius: 8px;
+  padding: 5px 26px 12px;
+
+  & h3 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #212121;
+    text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+    margin-bottom: 12px;
+  }
+
+  &__props {
+    &:not(&:last-child){
+      margin-bottom: 8px;
+    }
+  }
+
+  &__tags {}
+}

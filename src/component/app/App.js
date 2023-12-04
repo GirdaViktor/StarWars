@@ -1,11 +1,11 @@
 import React from "react";
 import RouteComponent from "../routeComponent/RouteComponent";
 
-import styles from './app.module.scss';
+import './app.scss';
 
 function App() {
   return (
-    <div className={styles.wrapper}>
+    <div className={'wrapper'}>
       <RouteComponent/>
     </div>
   );

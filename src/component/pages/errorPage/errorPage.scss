@@ -1,0 +1,18 @@
+.error-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #17002F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+
+  padding: 7% 77px 95px;
+
+  background-repeat: no-repeat;
+  background-image:
+          url('/img/the-death-star.png'),
+          url('/img/404.png');
+  background-position: center center;
+}

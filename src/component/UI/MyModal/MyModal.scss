@@ -1,0 +1,33 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(33, 33, 33, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+
+  &__close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 0;
+    top: -50px;
+    cursor: pointer;
+  }
+
+  &__content {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(1, 28, 64, 0.2);
+    border-radius: 16px;
+  }
+
+  &--active {
+    transform: scale(1);
+  }
+}

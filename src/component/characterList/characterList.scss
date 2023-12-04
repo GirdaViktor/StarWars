@@ -1,0 +1,11 @@
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 34px;
+  grid-row-gap: 45px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

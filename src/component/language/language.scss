@@ -1,0 +1,35 @@
+.language {
+  $this: &;
+
+  display: flex;
+  align-items: flex-start;
+  max-width: 120px;
+  position: relative;
+  cursor: pointer;
+  height: 20px;
+  z-index: -1;
+
+  &:hover {
+    #{$this}__item {
+      display: block;
+    }
+    #{$this}__items {
+      overflow: visible;
+    }
+  }
+
+  &__items {
+    overflow: hidden;
+    height: 20px;
+  }
+
+  &__title,
+  &__item {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4B4B4B;
+  }
+}
